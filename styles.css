@@ -1,0 +1,113 @@
+/* Estilos personalizados: Paleta Azul, Gris, Blanco (Inspiración IPN/ESCOM) */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0F172A; /* Slate-900: Fondo oscuro y profesional */
+}
+.header-bg {
+    background-color: #1E293B; /* Slate-800: Tono más claro para la barra de navegación */
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); /* Sombra Azul */
+}
+.card-bg {
+    background-color: #111827; /* Gray-900: Fondo de tarjeta muy oscuro */
+    border: 1px solid #1D4ED8; /* Blue-700: Borde para un toque tech */
+}
+.accent-text {
+    color: #3B82F6; /* Blue-500: Color principal de acento */
+}
+.secondary-accent-text {
+    color: #9CA3AF; /* Gray-400: Para detalles y fechas */
+}
+/* Título principal con estilo limpio y académico */
+.main-title {
+    border-bottom: 3px solid #3B82F6; /* Línea divisoria Azul */
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem; 
+}
+/* Estilo para la tarjeta FEATURED (Proyecto Fénix) - Ahora en Azul */
+.featured-card {
+    background-color: #1E3A8A; /* Blue-900/50: Fondo azul semitransparente */
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.7); /* Sombra brillante Azul */
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #3B82F6;
+}
+.featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 50px rgba(59, 130, 246, 0.9);
+}
+
+/* Estilo para la nueva tarjeta de Modos de Actitud (ya estaba en el estilo anterior) */
+.modes-card {
+    background-color: #0F172A; /* Slate-900 */
+    border: 1px solid #3B82F6; /* Blue-500 */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- CSS GRID DEL USUARIO IMPLEMENTADO --- */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr; 
+    gap: 24px; 
+    min-height: 100vh;
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 24px;
+}
+    
+.div3 {
+    grid-column: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    position: sticky;
+    top: 24px; 
+    z-index: 50;
+}
+
+/* Reglas responsivas para div2 y div4 */
+.div2, .div4 {
+    grid-row: 2 / span 1; 
+    padding: 0; 
+}
+
+/* Mobile: Apilamiento */
+.div2 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 3; 
+}
+
+/* Desktop: 1/5 | 4/5 */
+@media (min-width: 1024px) {
+    .div2 {
+        grid-column: 1 / span 1;
+        grid-row-start: 2;
+    }
+    .div4 {
+        grid-column: 2 / span 4;
+        grid-row-start: 2;
+    }
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track > div {
+    min-width: 100%;
+    box-sizing: border-box;
+}

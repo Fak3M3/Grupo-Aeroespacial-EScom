@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/TIBU-removebg-preview-removebg-preview.png" />
+    <title>Grupo Aeroespacial Escom</title>
+    <!-- Incluyendo Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-100">
+
+    <!-- CONTENEDOR PRINCIPAL DEL GRID (Clase .parent) -->
+     <div class="parent">
+        <!-- DIV 3: NAV BAR (Header - Fila 1, 5 Columnas) -->
+         <header class="div3 header-bg rounded-xl shadow-2xl">
+            <nav class="p-4 flex justify-between items-center flex-wrap">
+                <!-- Título del Equipo y Logotipo  -->
+                 <div class="flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2a8 8 0 100 16A8 8 0 0010 2zM9 9V5a1 1 0 112 0v4h4a1 1 0 110 2h-4v4a1 1 0 11-2 0v-4H5a1 1 0 110-2h4z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                    <h1 class="text-2xl font-extrabold text-white tracking-wider">ESCOM <span class="accent-text">GAE</span></h1>
+                </div>
+
+                <!-- Botones de Navegación --><div class="space-x-4 flex items-center">
+                    <a href="#inicio" class="text-gray-400 hover:text-white transition duration-300 rounded-lg p-2">Inicio</a>
+                    <!-- ENLACE DE JUSTIFICACIÓN AÑADIDO --><a href="#justificacion-section" class="text-gray-400 hover:text-white transition duration-300 rounded-lg p-2">Justificación</a>
+                    <a href="#ansys-section" class="text-gray-400 hover:text-white transition duration-300 rounded-lg p-2">ANSYS</a>
+                    <a href="#equipo-section" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50" aria-label="Conocer más sobre el equipo">
+                        Conocer Más
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- DIV 2: AVANCES EN MÉXICO (Columna 1, Filas 2-5) -->
+         <section class="div2 lg:space-y-6 rounded-xl card-bg p-6">
+            <h3 class="text-2xl font-bold accent-text border-b border-gray-700 pb-3 mb-6">Avances Aeroespaciales en México</h3>
+            
+            <!-- Noticia 1 -->
+             <div class="space-y-4 mb-6">
+                <div class="card-bg p-4 rounded-xl shadow-xl hover:shadow-blue-500/30 transition duration-300 border-2 border-transparent hover:border-blue-500">
+                    <h4 class="text-xl font-semibold mb-2 text-white">Avence en el desarrollo de satelites tipo CubeSat</h4>
+                    <img src="IMG/Noticia_1.webp" alt="Placeholder colaboración entre el IPN Y la UNAM" class="w-full h-32 object-cover rounded-lg mb-3 border border-blue-500">
+                    <p class="text-sm secondary-accent-text">Enero 29 2025</p>
+                    <p class="mt-2 text-gray-300 text-sm">La NASA probó con éxito 2 módulos que fueron diseñados por la UNAM y el IPN respectivamente; viajaron sobre Nuevo México y la estratosfera de la Antártida respectivamente</p>
+                    <a href="https://www.excelsior.com.mx/nacional/avance-espacial-ipn-unam-satelites-cubesat/1696857" class="accent-text text-sm font-medium mt-3 inline-block hover:underline">Leer más</a>
+                </div>
+
+                <!-- Noticia 2 --><div class="card-bg p-4 rounded-xl shadow-xl hover:shadow-blue-500/30 transition duration-300 border-2 border-transparent hover:border-blue-500">
+                    <h4 class="text-xl font-semibold mb-2 text-white">IPN replica entrenamientos de astronautas de la NASA</h4>
+                    <p class="text-sm secondary-accent-text">Noviembre 23 2025</p>
+                    <p class="mt-2 text-gray-300 text-sm">Los científicos politécnicos señalaron que el proyecto podría implementarse como una plataforma de entrenamiento integral y modular dirigida a agencias espaciales y empresas privadas de exploración espacial.</p>
+                    <a href="https://www.ipn.mx/assets/files/imageninstitucional/docs/comunicados/2025/11/c-60-realidad-virtual-ipn.pdf" class="accent-text text-sm font-medium mt-3 inline-block hover:underline">Leer más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIV 4: CONTENIDO PRINCIPAL (Columnas 2-5, Filas 2-5) --><div class="div4 pt-2">
+            <!-- Título principal con línea divisoria (main-title) --><h2 id="inicio" class="text-4xl lg:text-5xl font-extrabold text-white main-title">Bitácora Aeroespacial</h2>
+
+            <!-- SECCIÓN ACTUALIZADA: JUSTIFICACIÓN Y OBJETIVOS -->
+            <section id="justificacion-section" class="mb-16">
+                <h3 class="text-3xl font-extrabold text-white border-b border-gray-700 pb-2 mb-8 flex items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-3 accent-text" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm4 4H4v3h3V8zm-1 4H4v3h3v-3zm3-4h3v3h-3V8zm0 4h3v3h-3v-3zm0-8h3v3h-3V4zm-4 8h3v3h-3v-3zm8-4h3v3h-3V8zm0 4h3v3h-3v-3z" clip-rule="evenodd" />
+                    </svg>
+                    Justificación y Pilares Tecnológicos del CubeSat 1U
+                </h3>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Tarjeta de Justificación (Contenido del documento) -->
+                    <div class="card-bg p-6 rounded-2xl shadow-xl h-full">
+                        <h4 class="text-2xl font-bold accent-text mb-4">Contribución al Desarrollo Tecnológico Nacional</h4>
+                        <p class="text-gray-300 mb-4 leading-relaxed">
+                            El proyecto nace de la necesidad de investigar, implementar y dejar registro de soluciones tecnológicas en el sector estratégico aeroespacial en México. A pesar de ser catalogado como país constructor y operador de satélites, existe **poca transparencia** en la tecnología de sistemas de control desarrollados localmente.
+                        </p>
+                        <p class="text-gray-300 mb-4 leading-relaxed font-semibold">
+                            Propuesta: Diseñar un prototipo de estabilización y control de actitud para nanosatélites, integrando **filtros de Kalman optimizados** y sistemas de control basados en **ruedas inerciales**.
+                        </p>
+                        <p class="text-sm text-gray-400 italic">
+                            El proyecto busca dar continuidad a trabajos previos de simulación, enfocándose ahora en la implementación en hardware real para la formación de soluciones accesibles y de bajo costo.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta de Modos de Actitud (Contenido del documento) -->
+                    <div class="modes-card p-6 rounded-2xl shadow-xl h-full">
+                        <h4 class="text-2xl font-bold text-white mb-4 border-b border-blue-500 pb-2">Modos de Operación del Subsistema ADCS</h4>
+                        <p class="text-sm text-gray-300 mb-4">
+                            El diseño del satélite contempla diferentes modos de operación del Subsistema de Control de Actitud (ADCS) para optimizar el consumo de energía y la precisión:
+                        </p>
+                        <ul class="space-y-4">
+                            <!-- Modo 3: Fine-Point Mode - Máxima Precisión -->
+                            <li class="border-l-4 border-blue-400 pl-3">
+                                <span class="font-bold text-blue-400 block">Fine-Point Mode (Modo de Apuntamiento Fino):</span>
+                                <p class="text-sm text-gray-300">Modo de **máxima precisión** usando **Filtros de Kalman (EKF, UKF)** y control con ruedas de reacción. Es esencial para apuntar cámaras, telescopios o enlaces ópticos. <span class="secondary-accent-text italic">(Consumo: Alto).</span></p>
+                            </li>
+                            <!-- Modo 1: Detumble Mode - Estabilización Inicial -->
+                            <li class="border-l-4 border-gray-400 pl-3">
+                                <span class="font-bold text-gray-400 block">Detumble Mode (Desaturación Inicial):</span>
+                                <p class="text-sm text-gray-300">Primer modo tras el despliegue. Usa **magnetómetros** y **magnetorquers** (algoritmo B-dot) para amortiguar las rotaciones y proteger el satélite. <span class="secondary-accent-text italic">(Consumo: Bajo).</span></p>
+                            </li>
+                            <!-- Modo 4: Safe Mode - Protección -->
+                            <li class="border-l-4 border-red-500 pl-3">
+                                <span class="font-bold text-red-400 block">Safe Mode (Modo Seguro):</span>
+                                <p class="text-sm text-gray-300">Activado ante anomalías o baja energía. Se apagan cargas útiles y se usa control simple para recibir comandos y mantener energía mínima. <span class="secondary-accent-text italic">(Operación robusta).</span></p>
+                            </li>
+                        </ul>
+                        <!-- Imagen para ilustración educativa -->
+                        <p class="mt-4 text-center">
+                            
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- FIN SECCIÓN ACTUALIZADA: JUSTIFICACIÓN Y OBJETIVOS -->
+
+
+            <!-- SUB-GRID ASIMÉTRICO (2/3 | 1/3) --><div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+
+                <!-- COLUMNA PRINCIPAL (2/3) - Noticias del Proyecto y Destacados -->
+                 <section class="lg:col-span-2 space-y-8">
+                    <h3 class="text-3xl font-bold text-white border-b border-blue-500 pb-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 accent-text" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                        </svg>
+                        Noticias del proyecto CubeSat de 1U
+                    </h3>
+                    
+                    <!-- CARRUSEL FUNCIONAL -->
+                    <div class="relative carousel-wrapper">
+                        <!-- Botón Anterior -->
+                        <button onclick="moveCarousel(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700/70 hover:bg-blue-600 p-3 rounded-full z-10 ml-3 transition duration-300 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+
+                        <div id="carouselTrack" class="carousel-track">
+                            <!-- HITO 1 -->
+                            <div class="p-6 rounded-xl shadow-2xl featured-card">
+                                <h4 class="text-3xl text-center font-black mb-4 text-blue-300">¡MOSSO en la casa!</h4>
+                                <img src="IMG/visita.jpg" alt="Impresión 3D del CubeSat" class="w-full h-64 object-cover rounded-lg mb-4 border-2 border-blue-500">
+                                <p class="text-base secondary-accent-text text-center">03 Noviembre 2025 | Actividad: Mostrando resultados </p>
+                                <p class="mt-3 text-gray-100 text-lg leading-relaxed text-center">
+                                    El equipo GAE ha presentado oficialmente su nuevo prototipo, desarrollado en el departamento GENESIS, al director de la ESCOM, Iván Giovanny Mosso García. Esta demostración representa un paso decisivo y consolida el arranque de operaciones de nuestro grupo aeroespacial.
+                                </p>
+                            </div>
+
+                            <!-- HITO 2 -->
+                            <div class="p-6 rounded-xl shadow-2xl featured-card">
+                                <h4 class="text-3xl text-center font-black mb-4 text-blue-300">!Armando el CubeSat de 1u¡</h4>
+                                <img src="IMG/CUBESAT.jpg" alt="Simulación térmica" class="w-full h-64 object-cover rounded-lg mb-4 border-2 border-blue-500">
+                                <p class="text-base secondary-accent-text text-center">02 Diciembre 2025 | Fase: Ensamblaje </p>
+                                <p class="mt-3 text-gray-100 text-lg leading-relaxed text-center">
+                                    Hemos estado trabajando duro para poder generar el ensamblaje completo del CubeSat 1U, integrando las piezas impresas en 3D con los componentes electrónicos y sistemas de control.
+                                </p>
+                            </div>
+
+                            <!-- HITO 3 -->
+                            <div class="p-6 rounded-xl shadow-2xl featured-card">
+                                <h4 class="text-3xl text-center font-black mb-4 text-blue-300">Adquisición de la pantalla de GENESIS</h4>
+                                <img src="IMG/pantalla.jpg" alt="Sensores MEMS" class="w-full h-64 object-cover rounded-lg mb-4 border-2 border-blue-500">
+                                <p class="text-base secondary-accent-text text-center">03 Diciembre 2025 | Actividad: Añadiendo equipo </p>
+                                <p class="mt-3 text-gray-100 text-lg leading-relaxed text-center">
+                                    Despues de una larga espera, nos han dado la entrega de la contraseña de la pantalla de GENESIS, la cual nos permitira presentar de una manera mas profesional y visual tanto nuestros avances en ansys como presentaciones futuras.
+                                </p>
+                            </div>
+
+                            <!-- HITO 4 -->
+                            <div class="p-6 rounded-xl shadow-2xl featured-card">
+                                <h4 class="text-3xl text-center font-black mb-4 text-blue-300">Computadora de abordo</h4>
+                                <img src="IMG/Computadora de abordo.jpg" alt="Sensores MEMS" class="w-full h-64 object-cover rounded-lg mb-4 border-2 border-blue-500">
+                                <p class="text-base secondary-accent-text text-center">03 Diciembre 2025 | Actividad: Mostrando Equipo</p>
+                                <p class="mt-3 text-gray-100 text-lg leading-relaxed text-center">
+                                   Durante la visita del director Iván Giovanny Mosso García, se hizo muestra de la computadora de abordo que se consigio para nuestro CubeSat 1U. Este equipo es crucial para las operaciones del satélite, permitiéndonos gestionar y controlar sus funciones en órbita.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Botón Siguiente -->
+                        <button onclick="moveCarousel(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700/70 hover:bg-blue-600 p-3 rounded-full z-10 mr-3 transition duration-300 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- COLUMNA LATERAL (1/3) - Artículos y Eventos --><section class="lg:col-span-1 space-y-6">
+                    <!-- Artículos Destacados --><div class="bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-700">
+                        <h3 class="text-2xl font-bold text-white border-b border-gray-700 pb-2 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm2 2a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 5a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+                            </svg>
+                            Artículos Destacados
+                        </h3>
+                        <div class="space-y-4">
+                            <article class="border-l-4 border-blue-500 pl-3">
+                                <h4 class="text-lg font-semibold text-white hover:text-blue-400">What are SmallSats and CubeSats?</h4>
+                                <a href="https://www.nasa.gov/what-are-smallsats-and-cubesats/" class="accent-text text-sm font-medium mt-3 inline-block hover:underline">Leer más</a>
+                            </article>
+                            <article class="border-l-4 border-blue-500 pl-3">
+                                <h4 class="text-lg font-semibold text-white hover:text-blue-400">Guía para el desarrollo de misiones universitarias basadas en CubeSats</h4>
+                                <a href="https://haciaelespacio.aem.gob.mx/revistadigital/articul.php?interior=1637" class="accent-text text-sm font-medium mt-3 inline-block hover:underline">Leer más</a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Novedades y Eventos --><div class="bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-700">
+                        <h3 class="text-2xl font-bold text-white border-b border-gray-700 pb-2 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                              <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 15h12a1 1 0 00.707-1.707L14 11.586V8a6 6 0 00-6-6zM4 16h12v2H4z" />
+                            </svg>
+                            Próximos Eventos
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="text-gray-300">
+                                <span class="font-bold text-blue-400">Sin fecha:</span> Foto oficial con los profesores asociados a GAE
+                            </li>
+            
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- NUEVA SECCIÓN: NUESTRO DESARROLLO CON ANSYS --><section id="ansys-section" class="card-bg rounded-2xl shadow-2xl ring-4 ring-blue-500 ring-opacity-20 p-8 mt-16">
+                <h2 class="text-4xl font-extrabold text-white mb-8 border-b border-blue-500 pb-2 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4 accent-text" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.3-.83-2.82-.42-3.474 1.488-.351 1.05-.272 2.136.246 3.064.298.549.165 1.258-.5 1.655-1.547.99-1.547 3.094 0 4.084.665.397.798 1.106.5 1.655-.517.928-.596 2.014-.245 3.064.654 1.908 2.174 2.318 3.474 1.488a1.532 1.532 0 012.286.948c.38 1.56 2.6 1.56 2.98 0a1.532 1.532 0 012.286-.948c1.3.83 2.82.42 3.474-1.488.351-1.05.272-2.136-.246-3.064-.298-.549-.165-1.258.5-1.655 1.547-.99 1.547-3.094 0-4.084-.665-.397-.798-1.106-.5-1.655.517-.928.596-2.014.245-3.064-.654-1.908-2.174-2.318-3.474-1.488a1.532 1.532 0 01-2.286-.948zM10 11a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                    </svg>
+                    Uso y desarrollo de ANSYS
+                </h2>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    ANSYS ah sido un gran aliado para validar nuestros diseños de componentes aerodinámicos y estructurales, garantizando la máxima eficiencia y seguridad. Aquí puedes ver a nuestro equipo en acción, trabajando con modelos complejos y analizando resultados críticos. Agradecemos el apoyo a Ansys por brindarnos el uso de las licencias para el desarrollo de nuestros proyectos.
+                </p>
+
+                <!-- GALERÍA DE IMÁGENES ANSYS (Grid de 2 o 3 columnas) --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="rounded-xl overflow-hidden shadow-lg border-2 border-blue-500">
+                        <img src="IMG/Integrante_1.jpg" alt="Miembro del equipo trabajando en ANSYS" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+                        <p class="p-3 text-sm text-gray-400 bg-slate-800">Análisis de flujo en tobera de propulsión.</p>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-lg border-2 border-blue-500">
+                        <img src="IMG/Integrante_2.jpg" alt="Miembro del equipo revisando resultados de simulación" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+                        <p class="p-3 text-sm text-gray-400 bg-slate-800">Simulación estructural del chasis del CubeSat.</p>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-lg border-2 border-blue-500">
+                        <img src="IMG/Integrante_3.jpg" alt="Miembro del equipo discutiendo un diseño en ANSYS" class="w-full h-48 object-cover transform hover:scale-105 transition duration-300">
+                        <p class="p-3 text-sm text-gray-400 bg-slate-800">Revisión de dinámica de fluidos para alerones.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SECCIÓN "CONOCER MÁS SOBRE EL EQUIPO" -->
+             <section id="equipo-section" class="card-bg rounded-2xl shadow-2xl ring-4 ring-blue-500 ring-opacity-20 p-8 mt-16">
+                <h2 class="text-4xl font-extrabold text-blue-400 mb-8 border-b border-blue-500 pb-2">Grupo Aeroespacial Escom</h2>
+
+                <div class="lg:flex lg:space-x-8 items-center">
+                    <!-- Resumen de la Misión --><div class="lg:w-2/3 mb-8 lg:mb-0">
+                        <h3 class="text-3xl font-bold text-white mb-4">¡Conocenos!</h3>
+                        <p class="text-lg text-gray-300 leading-relaxed">
+                           Somos un grupo conformado por apasionados del espacio y la tecnologia aeroespacial, dedicados a la investigación, desarrollo e innovación en el ámbito de los satélites y sistemas espaciales. Nuestro objetivo es fomentar el conocimiento y la aplicación de tecnologías avanzadas en ESCOM, contribuyendo al crecimiento del sector aeroespacial en el IPN.
+                        </p>
+                        <p class="mt-4 text-gray-300 leading-relaxed">
+                            A través de proyectos prácticos, colaboraciones académicas y participación en competencias internacionales, buscaremos inspirar a la próxima generación de ingenieros y posicionar a ESCOM como un referente en la educación y desarrollo tecnológico en el area Aeroespacial.    
+                        </p>
+                    </div>
+
+                    <!-- Foto del Equipo (Placeholder) --><div class="lg:w-1/3">
+                        <img src="IMG/Equipo.jpg" alt="Equipo GAE" class="w-full h-auto rounded-xl shadow-lg border-4 border-blue-500">
+                        <p class="text-center text-sm text-gray-400 mt-2">Integrantes que forman parte del "Grupo Aeroespacial Escom"</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- FOOTER (Fuera del grid principal, abarcando todo el ancho inferior) --><footer class="header-bg mt-8 p-6 w-full">
+        <div class="max-w-7xl mx-auto text-center text-gray-400">
+            <p>&copy; 2025 Equipo Caelus. Todos los derechos reservados. | Explorando el cosmos desde el IPN.</p>
+        </div>
+    </footer>
+    <script src="Back/Carrusel.js">
+    </script>
+</body>
+</html>
